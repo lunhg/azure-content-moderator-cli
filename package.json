@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "axios": "^0.19.2",
+    "commander": "^5.1.0",
+    "dotenv": "^8.2.0"
+  },
+  "name": "desafioms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "desafioms": "content-moderator.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node bin/content-moderator.js run -P -C -A -m 'this is a fucking shit message, email: test@mail.net phone: 123456789 IP: 127.1.2.3 address: 1, Some adrress, Redmond, WA 98052'"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
