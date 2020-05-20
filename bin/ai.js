@@ -43,7 +43,7 @@ program
   .description('Microsoft Azure Cognitive Services Text Analysis')
   .option('-m, --message <msg>', 'the main message')
   .option('-d, --detect-language', 'enable detects language mount point')
-  .option('-e, --entietes', 'enable entietes mount point')
+  .option('-e, --entities', 'enable entietes mount point')
   .option('-k, --key-phrases', 'enable key phrases mount point')
   .option('-s, --sentiment', 'enable sentiment mount point')
   .option('-l, --language <language>', 'what is the language')
@@ -53,7 +53,7 @@ program
       url = `${url}/language`;
     }
     if (cmd.entietes){
-      url = `${url}/entietes`;
+      url = `${url}/entities`;
     }
     if (cmd.key_phrases){
       url = `${url}/keyPhrases`;
