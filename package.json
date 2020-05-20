@@ -2,7 +2,8 @@
   "dependencies": {
     "axios": "^0.19.2",
     "commander": "^5.1.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "uuid": "^8.0.0"
   },
   "name": "desafioms",
   "version": "1.0.0",
@@ -12,7 +13,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node bin/content-moderator.js run -P -C -A -m 'this is a fucking shit message, email: test@mail.net phone: 123456789 IP: 127.1.2.3 address: 1, Some adrress, Redmond, WA 98052'"
+    "test:moderator": "node bin/ai.js moderate -P -C -A -m 'this is a fucking shit message, email: test@mail.net phone: 123456789 IP: 127.1.2.3 address: 1, Some adrress, Redmond, WA 98052'",
+    "test:analysis:sentiment:happy": "node bin/ai.js analysis -s -l 'pt' -m 'Olá mundo! Estou contente por funcionar.'",
+    "test:analysis:sentiment:sad": "node bin/ai.js analysis -s -l 'pt' -m 'Olá mundo... não me importo por isso funcionar.'",
+    "test:analysis:sentiment:angry": "node bin/ai.js analysis -s -l 'pt' -m 'OLÁ MUNDO! Tá osso!'"
   },
   "author": "",
   "license": "ISC",
